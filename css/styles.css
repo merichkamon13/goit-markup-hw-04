@@ -46,6 +46,7 @@ body{
     list-style: none;
 }
 .portfolio-link{
+    position: relative;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -93,6 +94,10 @@ body{
 .hero-section{
     height: 600px; 
     background-color: var(--primary-black-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), url(../images/herosection/people-office-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0px auto;
     padding: 188px 0px;
    
@@ -109,6 +114,20 @@ body{
     display: flex; 
     margin-right: auto; 
     align-items: center;  
+}
+.portfolio-link::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    
+}
+.portfolio-link.current::after{
+    background-color: #404BBF;
 }
 .hero-title{
     font-style: 'Roboto', sans-serif;
@@ -161,6 +180,8 @@ body{
     background-color: #404BBF;
     color: #FFFFFF;
     border: 1px solid transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
 }
 
 .benefits-list{
@@ -239,11 +260,12 @@ body{
 .section-team{
     background-color: #F4F4FD;
 }
+
 .team-list-item{
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
-    
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .text{
     font-family: 'Roboto', sans-serif;
@@ -255,8 +277,9 @@ body{
     margin: 0px;
     padding: 0px;
     list-style: none;
-    
 }
+
+
 
 .team-text{
     padding: 32px 0px;
@@ -289,6 +312,10 @@ body{
 }
 .card-set-item{
     width: calc((100% - 48px) / 3);  
+}
+.card-set-item:hover{
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    
 }
 .card-container{
     border: 1px solid #e7e9fc; 
