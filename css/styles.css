@@ -405,6 +405,7 @@ color: #F4F4FD;
     gap: 24px;
 }
 .customers-icon-item{
+    display: flex;
     width: calc((100% - 120px) / 6); 
     height: 88px;
 }
