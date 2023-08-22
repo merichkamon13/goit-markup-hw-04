@@ -323,6 +323,44 @@ body{
     border-top: none; 
     margin: 0px;
 }
+.portfolio-overlay{
+position: relative;
+overflow: hidden;
+}
+
+.overlay-text{
+font-size: 16px;
+line-height: 1.5; 
+letter-spacing: 0.03em;
+color: #F4F4FD;
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+
+    transition-property: transform;
+    transition-delay: 0;
+    transition-duration: 400ms;
+    transition-timing-function: ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-bottom: 164px;
+    padding-left: 32px;
+}
+.portfolio-overlay:hover .overlay,
+.portfolio-overlay:focus .overlay{
+    transform: translateY(0);
+}
 .footer{
     background-color: var(--primary-black-color);
     padding: 100px 0px;
