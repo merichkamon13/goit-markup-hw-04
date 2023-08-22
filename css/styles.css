@@ -399,11 +399,13 @@ color: #F4F4FD;
 }
 .customers-icon{
     display: flex;
-    gap: 24px;
-    width: calc((100% - 120px) / 6); 
+    gap: 24px; 
     height: 88px;
 }
 .customers-icon-item{
+    width: calc((100% - 120px) / 6); 
+}
+.customers-icon-element{
     width: 100%;
     height: 100%;
     border: 1px solid #8e8f99;
@@ -413,8 +415,8 @@ color: #F4F4FD;
     justify-content: center;
     color: var(--icons-color)
 }
-.customers-icon-item:hover,
-.customers-icon-item:focus{
+.customers-icon-element:hover,
+.customers-icon-element:focus{
     color: #404bbf;
     border-color: #404bbf; 
 
