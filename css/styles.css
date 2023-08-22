@@ -293,11 +293,10 @@ body{
     display: flex;
     justify-content: center; 
     gap: 24px; 
+}
+.team-icons{
     width:40px;
     height: 40px;
-}
-.circle-icon{
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-media-link{
     width: 100%;
@@ -307,6 +306,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 .team-media-link:hover,
 .team-media-link:focus{
