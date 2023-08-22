@@ -47,7 +47,6 @@ body{
 }
 .portfolio-link{
     position: relative;
-    transition: 
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -55,9 +54,8 @@ body{
     letter-spacing: 0.02em;
     color: var(--primary-black-color);
     display: block;
-    padding: 24px 0px;
-    
-  
+    padding: 24px 0px; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-link:hover,
 .portfolio-link:focus{
@@ -94,11 +92,13 @@ body{
     color:#404bbf;
 }
 .hero-section{
+    max-width: 1440px;
     height: 600px; 
     background-color: var(--primary-black-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), url(../images/herosection/people-office-1.jpg);
     background-repeat: no-repeat;
+    background-position: center; 
     background-size: cover;
     margin: 0px auto;
     padding: 188px 0px;
@@ -129,11 +129,17 @@ body{
     width: 100%;
     height: 4px;
     bottom: -1px;
+    color:#404BBF;
     
+}
+.portfolio-link.current{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color:#404BBF;
+
 }
 .portfolio-link.current::after{
     background-color: #404BBF;
-    color:#404BBF;
+    
 }
 .hero-title{
     font-style: 'Roboto', sans-serif;
@@ -163,6 +169,7 @@ body{
     cursor: pointer;
     padding: 12px 24px;
     margin: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .hero-btn:hover,
 .hero-btn:focus{
@@ -187,9 +194,16 @@ body{
     color: #FFFFFF;
     border: 1px solid transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
 }
-
+.adventages-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
 .benefits-list{
     display: flex;
     gap: 24px; 
