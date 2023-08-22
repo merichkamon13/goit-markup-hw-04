@@ -401,7 +401,7 @@ color: #F4F4FD;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0px;
     gap: 24px;
 }
 .customers-icon-item{
