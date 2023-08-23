@@ -190,13 +190,22 @@ body{
     border-radius: 4px;
     border: 1px solid #e7e9fc;
 }
+
 .portfolio-button-items:hover,
 .portfolio-button-items:focus{
     background-color: #404BBF;
     color: #FFFFFF;
     border: 1px solid transparent;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.portfolio-btn-link{
+    display:block;
+}
+.portfolio-btn-link:hover,
+.portfolio-btn-link:focus{
+    box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .adventages-icon{
     display: flex;
     align-items: center;
@@ -348,6 +357,8 @@ body{
     margin: 0px;
     margin-bottom: 72px;
     padding: 0px;
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 
 .card-set{
@@ -357,6 +368,13 @@ body{
     row-gap: 48px;
     padding: 0px;
     margin: 0px;
+}
+.card-set-link{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.card-set-link:hover
+.card-set-linf:focus{
+    transform: translateY(0%);
 }
 .card-set-item{
     width: calc((100% - 48px) / 3);  
@@ -388,12 +406,10 @@ color: #F4F4FD;
     top: 0;
     left: 0;
     transform: translateY(100%);
-
     transition-property: transform;
     transition-delay: 0;
     transition-duration: 400ms;
     transition-timing-function: ease;
-
     display: flex;
     align-items: center;
     justify-content: center;
