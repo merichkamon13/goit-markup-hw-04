@@ -415,9 +415,10 @@ overflow: hidden;
     
       
 }
-
-
 .portfolio-overlay:hover .overlay-text{
+    transform: translateY(0%);
+}
+.portfolio-overlay:focus .overlay-text{
     transform: translateY(0%);
 }
 .customers-section{
