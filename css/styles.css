@@ -571,6 +571,7 @@ overflow: hidden;
 .modal-btn:focus{
     background-color: #404bbf;
     border: none;
+    fill: #ffffff;
 }
 .modal-btn-icon{
     fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
