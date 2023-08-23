@@ -371,7 +371,7 @@ body{
 .card-set-link{
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.card-set-link:hover
+.card-set-link:hover,
 .card-set-linf:focus{
     transform: translateY(0%);
 }
@@ -398,7 +398,7 @@ overflow: hidden;
     top: 0;
     font-size: 16px;
     line-height: 1.5; 
-    letter-spacing: 0.03em;
+    letter-spacing: 0.02em;
     color: var(--second-white-color);
     padding: 40px 32px;
     background-color: #4D5AE5;
