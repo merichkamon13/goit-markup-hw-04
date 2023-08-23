@@ -408,16 +408,13 @@ overflow: hidden;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-    
-    
+    justify-content: center;   
 }
 
 
 .portfolio-overlay:hover .overlay-text,
 .portfolio-overlay:focus .overlay-text{
-    transform: translateY(0);
+    transform: translateY(0%);
 }
 .customers-section{
     max-height: 440px;
